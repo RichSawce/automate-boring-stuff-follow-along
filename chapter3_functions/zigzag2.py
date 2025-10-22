@@ -1,20 +1,12 @@
-import sys
-
-c = ' '
-d = ' ' * 8
-reverse = "        "
-stars = '********'
-
+c = 0
+stars = "********"
+space = " "
 
 while True:
-    if c < d:
-     print(c + stars)
-     c += ' '
-    
-    if c != d and range(len(reverse)):
-      for e in range(len(reverse)):
-       try:   
-        print(reverse[e:] + stars)
-       except:
-        KeyboardInterrupt
-        sys.exit()
+    if c < 15:
+     print(space *c + stars)
+     c += 1
+     if c == 14:
+        while c != 0:
+         print(space * (c - 1) + stars)
+         c -= 1
