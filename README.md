@@ -5,7 +5,7 @@ This repo contains my solutions and practice programs as I work through *Automat
 ## Chapters Completed
 - [ ] Chapter 1 – Python Basics (terminal practice only, no uploads)
 - [x] Chapter 2 – Flow Control
-- [ ] Chapter 3 – Functions
+- [x] Chapter 3 – Functions
 - [ ] Chapter 4 – Lists
 - [ ] Chapter 5 – Dictionaries & Structuring Data
 - [ ] Chapter 6 – Manipulating Strings
