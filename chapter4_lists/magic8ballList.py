@@ -13,8 +13,6 @@ messages = ["It is certain.",
             "Reply hazy, try again.",
             "Ask again later."]
 
-print("ask a question for your fourtune")
+print("ask a question for your fortune")
 question = input()
-while True:
-    print(random.choice(messages))
-    break
+print(random.choice(messages))
