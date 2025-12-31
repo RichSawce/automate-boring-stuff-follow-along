@@ -19,23 +19,23 @@ while True:
             inputItem = input(
                 "would you like to add anything else to your list?\n")
 
-            if inputItem.lower() == 'no' and spam[0:]:
+            if inputItem.lower() == 'no' and len(spam) == 1:
                 print("Have a nice day1\n Your list contains:\n", *(spam))
                 sys.exit()
 
 
-            if inputItem.lower() == 'no' and spam[0:]:
+            if inputItem.lower() == 'no' and len(spam) > 1:
                 print("Have a nice day2\n Your list contains:\n", *
                       (', '.join(spam[0:-1]), 'and', spam[-1]))
                 sys.exit()
 
 
-            if inputItem.lower() == 'yes' and spam[0]:
+            if inputItem.lower() == 'yes' and len(spam) == 1:
                 print("So far your list contains:\n", *(spam))
                 break
 
             else:
-                inputItem.lower() == 'yes' and spam[0:]
+                inputItem.lower() == 'yes' and len(spam) > 1
                 print("So far your list contains:\n", *
                       (', '.join(spam[0:-1]), 'and', spam[-1]))
                 break
