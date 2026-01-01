@@ -1,6 +1,5 @@
 import sys
 spam = []
-cannedSpam = ', '.join(spam[0:-1])
 print("Welcome to your shopping list!")
 while True:
     inputItem = input(
@@ -20,12 +19,12 @@ while True:
                 "would you like to add anything else to your list?\n")
 
             if inputItem.lower() == 'no' and len(spam) == 1:
-                print("Have a nice day1\n Your list contains:\n", *(spam))
+                print("Have a nice day\n Your list contains:\n", *(spam))
                 sys.exit()
 
 
             if inputItem.lower() == 'no' and len(spam) > 1:
-                print("Have a nice day2\n Your list contains:\n", *
+                print("Have a nice day\n Your list contains:\n", *
                       (', '.join(spam[0:-1]), 'and', spam[-1]))
                 sys.exit()
 
@@ -34,8 +33,11 @@ while True:
                 print("So far your list contains:\n", *(spam))
                 break
 
-            else:
-                inputItem.lower() == 'yes' and len(spam) > 1
+            if  inputItem.lower() == 'yes' and len(spam) > 1:
                 print("So far your list contains:\n", *
                       (', '.join(spam[0:-1]), 'and', spam[-1]))
                 break
+            else:
+                print("Please answer 'yes' or 'no'")
+                continue
+
