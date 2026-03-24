@@ -1,5 +1,6 @@
 
 
+
 grid = [['.', '.', '.', '.', '.', '.'],
         ['.', '0', '0', '.', '.', '.'],
         ['0', '0', '0', '0', '.', '.'],
@@ -10,12 +11,32 @@ grid = [['.', '.', '.', '.', '.', '.'],
         ['.', '0', '0', '.', '.', '.'],
         ['.', '.', '.', '.', '.', '.'],]
 
+flipped = grid[::-1]
 
-def rotateGrid(grid):
-    flipGrid = grid[:]
-    for i in range (0, len(grid)):
-        for j in range (0, len(grid)):
-            flipGrid[i][j] = grid[-(j+1)][i]
-    return flipGrid
-print(rotateGrid(grid))
-
+for i in flipped:
+    i = [row[0] for row in flipped[:]]
+    for j in flipped:
+        j = [row[1] for row in flipped[:]]
+        break
+    
+    for k in flipped:
+            k = [row[2] for row in flipped[:]]
+            break
+              
+    for l in flipped:
+            l = [row[3] for row in flipped[:]]
+            break
+            
+    for m in flipped:
+            m = [row[4] for row in flipped[:]]
+            break
+            
+    for n in flipped:
+            n = [row[5] for row in flipped[:]]
+            break
+print(*i)
+print(*j)
+print(*k)
+print(*l)
+print(*m)
+print(*n)
