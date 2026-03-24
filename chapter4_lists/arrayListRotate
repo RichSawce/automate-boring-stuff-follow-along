@@ -4,16 +4,16 @@ grid = [['1', '2', '3'],
 
 flipped = grid[::-1]
 
-for j in flipped:
-    j = [row[0] for row in flipped[:]]
-    for i in flipped:
-        i = [row[1] for row in flipped[:]]
+for i in flipped:
+    i = [row[0] for row in flipped[:]]
+    for j in flipped:
+        j = [row[1] for row in flipped[:]]
         break
     
     for k in flipped:
             k = [row[2] for row in flipped[:]]
             break
               
-print(*j)
 print(*i)
+print(*j)
 print(*k)
