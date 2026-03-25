@@ -3,10 +3,10 @@
 This repo contains my solutions and practice programs as I work through *Automate the Boring Stuff with Python*.
 
 ## Chapters Completed
-- [ ] Chapter 1 – Python Basics (terminal practice only, no uploads)
+- [x] Chapter 1 – Python Basics (terminal practice only, no uploads)
 - [x] Chapter 2 – Flow Control
 - [x] Chapter 3 – Functions
-- [ ] Chapter 4 – Lists
+- [x] Chapter 4 – Lists
 - [ ] Chapter 5 – Dictionaries & Structuring Data
 - [ ] Chapter 6 – Manipulating Strings
 - [ ] Chapter 7 – Pattern Matching with Regular Expressions
