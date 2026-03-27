@@ -1,22 +1,26 @@
 #Tic Tac Toe Game
 
-moveList = {"TL": [], "TM": [], "TR": [],
-            "ML": [], "MM": [], "MR": [],
-            "BL": [], "BM": [], "BR": []}
+board = {'top-L': ' ', 'top-M': ' ', 'top-R': ' ',
+            'mid-L': ' ', 'mid-M': ' ', 'mid-R': ' ',
+            'low-L': ' ', 'low-M': ' ', 'low-R': ' '}
 
-grid = moveList(['', '', ''],
-                ['', '', ''],
-                ['', '', ''])
+def printBoard():
+ print(board['top-L']+ '|' + board['top-M'] + '|' + board['top-R'])
+ print('-+-+-')
+ print(board['mid-L']+ '|' + board['mid-M'] + '|' + board['mid-R'])
+ print('-+-+-')
+ print(board['low-L']+ '|' + board['low-M'] + '|' + board['low-R'])
 
-user_input = moveList.values()
+printBoard()
 
 
-
-
-while True: 
- move = input("Enter your move: (TL, TM, TR, ML, MM, MR, BL, BM, BR) \n")
- if move in moveList:
-    moveList[move].append("X")
-    print(*grid)
- else:    print("Invalid move. Please try again.")
- 
+while True:
+ move = input("Place your X \n")
+ if move in board:
+   board[move] = 'X'
+   printBoard()
+ elif move == '':
+  print("Must enter X\n")
+ elif move == 'quit':
+  break
+  
