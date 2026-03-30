@@ -1,5 +1,5 @@
 #Tic Tac Toe Game
-
+import random
 
 board = {'top-L': ' ', 'top-M': ' ', 'top-R': ' ',
             'mid-L': ' ', 'mid-M': ' ', 'mid-R': ' ',
@@ -14,6 +14,8 @@ win = [['top-L', 'top-M', 'top-R'],
        ['top-L', 'mid-M', 'low-R'],
        ['top-R', 'mid-M', 'low-L']]
 
+
+
 def printBoard():
  print(board['top-L']+ '|' + board['top-M'] + '|' + board['top-R'])
  print('-+-+-')
@@ -21,17 +23,30 @@ def printBoard():
  print('-+-+-')
  print(board['low-L']+ '|' + board['low-M'] + '|' + board['low-R'])
 
+def compMove():
+  move = random.choice(list(board.keys()))
+  if board.values not in board:
+    board[move] = 'O'
+    printBoard()
+
 printBoard()
+
 
 
 while True:
  move = input("Enter the position you want to place your X \n(top-L, top-M, top-R, mid-L, mid-M, mid-R, low-L, low-M, low-R) or type 'quit' to exit: \n")
  if move in board:
    board[move] = 'X'
-   printBoard() 
- if board[move] == win:
+   printBoard()
+   compMove()
+ if board== win:
     print("Congratulations! You win!")
- if move not in board and move != 'quit':
-    print("Must enter a vaild position\n")
+    break
  if move == 'quit':
-   break
+    print("Thanks for playing!")
+    break
+ elif move not in board:
+    print("Must enter a vaild position\n")
+    printBoard()
+ 
+  
