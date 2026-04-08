@@ -7,7 +7,7 @@ This repo contains my solutions and practice programs as I work through *Automat
 - [x] Chapter 2 – Flow Control
 - [x] Chapter 3 – Functions
 - [x] Chapter 4 – Lists
-- [ ] Chapter 5 – Dictionaries & Structuring Data
+- [x] Chapter 5 – Dictionaries & Structuring Data
 - [ ] Chapter 6 – Manipulating Strings
 - [ ] Chapter 7 – Pattern Matching with Regular Expressions
 - [ ] Chapter 8 - Input Validation
